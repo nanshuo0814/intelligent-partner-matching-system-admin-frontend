@@ -29,11 +29,11 @@
           placeholder="请输入一级评论的ID"
         ></el-input>
       </el-form-item>
-      <el-form-item label="子评论的ID：" prop="answerId">
+      <el-form-item label="父评论的ID：" prop="answerId">
         <el-input
           clearable
           v-model="searchForm.answerId"
-          placeholder="请输入子评论的ID"
+          placeholder="请输入父评论的ID"
         ></el-input>
       </el-form-item>
       <el-form-item label="评论内容：" prop="content">
@@ -105,7 +105,7 @@
           <span v-else>{{ scope.row.parentId }}</span>
         </template>
       </el-table-column>
-      <el-table-column prop="answerId" label="子级评论ID" width="180"
+      <el-table-column prop="answerId" label="父评论ID" width="180"
         ><template slot-scope="scope">
           <span v-if="scope.row.answerId === null">null</span>
           <span v-else>{{ scope.row.answerId }}</span>
@@ -207,10 +207,10 @@
             placeholder="请输入一级评论ID："
           ></el-input>
         </el-form-item>
-        <el-form-item label="子评论ID：" prop="answerId">
+        <el-form-item label="父评论ID：" prop="answerId">
           <el-input
             v-model="editForm.answerId"
-            placeholder="请输入子评论ID"
+            placeholder="请输入父评论ID"
           ></el-input>
         </el-form-item>
         <el-form-item label="评论内容：" prop="content">
@@ -350,7 +350,7 @@ export default {
       // 编辑弹窗是否可见
       editDialogVisible: false,
       // 编辑弹窗标题
-      editDialogTitle: "编辑举报反馈信息",
+      editDialogTitle: "编辑帖子评论信息",
       // 编辑表单数据
       editForm: {
         id: "",
@@ -417,7 +417,7 @@ export default {
                 this.searchTags();
                 Message.success("修改成功");
               } else {
-                Message.error("举报反馈信息修改失败：" + response.message);
+                Message.error("修改失败：" + response.message);
               }
             })
             .catch((error) => {
@@ -513,7 +513,7 @@ export default {
             this.pagination.pageSize = parseInt(response.data.size);
             Message.success("查询成功");
           } else {
-            Message.error("举报反馈信息查询失败：" + response.message);
+            Message.error("查询失败：" + response.message);
           }
         })
         .catch((error) => {
