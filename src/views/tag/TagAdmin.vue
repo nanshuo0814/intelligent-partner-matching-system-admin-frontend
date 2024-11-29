@@ -261,7 +261,7 @@ export default {
                     }).catch((error) => {
                         Message.error('添加失败');
                         console.error('添加失败:', error);
-                    });
+                    }); 
                 } else {
                     return false;
                 }
