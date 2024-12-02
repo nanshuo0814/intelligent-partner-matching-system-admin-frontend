@@ -1,99 +1,64 @@
-# vue-admin-template
 
-English | [简体中文](./README-zh.md)
+# 智配伙伴系统管理前端后台
 
-> A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
+## 项目简介
+这是一个用于智能匹配系统的管理前端项目，旨在为管理员提供便捷的用户管理和数据查看功能。
 
-**Live demo:** http://panjiachen.github.io/vue-admin-template
+## 技术栈
+- Vue.js
+- JavaScript
+- CSS (可选：Sass, Less)
+- Webpack (构建工具)
 
+## 安装步骤
+1. 克隆仓库:
+   ```bash
+   git clone https://github.com/nanshuo0814/intelligent-partner-matching-system-admin-frontend.git
+   ```
+2. 进入项目目录:
+   ```bash
+   cd intelligent-partner-matching-system-admin-frontend
+   ```
+3. 安装依赖:
+   ```bash
+   npm install
+   ```
+4. 启动开发服务器:
+   ```bash
+   npm run dev
+   ```
 
-**The current version is `v4.0+` build on `vue-cli`. If you want to use the old version , you can switch branch to [tag/3.11.0](https://github.com/PanJiaChen/vue-admin-template/tree/tag/3.11.0), it does not rely on `vue-cli`**
+## 使用说明
+### 开发模式
+- 启动开发服务器后，访问 `http://localhost:9528` 即可查看应用。
+- 修改代码后，开发服务器会自动重新加载页面。
 
-<p align="center">
-  <b>SPONSORED BY</b>
-</p>
-<p align="center">
-   <a href="https://finclip.com?from=vue_element" title="FinClip" target="_blank">
-      <img height="200px" src="https://gitee.com/panjiachen/gitee-cdn/raw/master/vue%E8%B5%9E%E5%8A%A9.png" title="FinClip">
-   </a>
-</p>
+### 生产模式
+- 构建生产版本:
+  ```bash
+  npm run build
+  ```
+- 构建完成后，生成的文件将位于 `dist` 目录中。
 
-## Build Setup
+## 贡献指南
+欢迎贡献代码！请遵循以下步骤：
+1. Fork 本仓库。
+2. 创建一个新的分支:
+   ```bash
+   git checkout -b feature/new-feature
+   ```
+3. 提交您的更改:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. 推送到您的分支:
+   ```bash
+   git push origin feature/new-feature
+   ```
+5. 提交 Pull Request。
 
-```bash
-# clone the project
-git clone https://github.com/PanJiaChen/vue-admin-template.git
+## 联系方式
 
-# enter the project directory
-cd vue-admin-template
+https://github.com/nanshuo0814
 
-# install dependency
-npm install
-
-# develop
-npm run dev
-```
-
-This will automatically open http://localhost:9528
-
-## Build
-
-```bash
-# build for test environment
-npm run build:stage
-
-# build for production environment
-npm run build:prod
-```
-
-## Advanced
-
-```bash
-# preview the release environment effect
-npm run preview
-
-# preview the release environment effect + static resource analysis
-npm run preview -- --report
-
-# code format check
-npm run lint
-
-# code format check and auto fix
-npm run lint -- --fix
-```
-
-Refer to [Documentation](https://panjiachen.github.io/vue-element-admin-site/guide/essentials/deploy.html) for more information
-
-## Demo
-
-![demo](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/demo.gif)
-
-## Extra
-
-If you want router permission && generate menu by user roles , you can use this branch [permission-control](https://github.com/PanJiaChen/vue-admin-template/tree/permission-control)
-
-For `typescript` version, you can use [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Credits: [@Armour](https://github.com/Armour))
-
-## Related Project
-
-- [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
-
-- [electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
-
-- [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template)
-
-- [awesome-project](https://github.com/PanJiaChen/vue-element-admin/issues/2312)
-
-## Browsers support
-
-Modern browsers and Internet Explorer 10+.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
-
-## License
-
-[MIT](https://github.com/PanJiaChen/vue-admin-template/blob/master/LICENSE) license.
-
-Copyright (c) 2017-present PanJiaChen
+如果有任何问题或建议，请联系 [您的邮箱地址] 或者在 GitHub 上提交 Issue。
