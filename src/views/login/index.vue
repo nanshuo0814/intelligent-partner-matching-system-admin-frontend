@@ -75,8 +75,8 @@ export default {
     }
     return {
       loginForm: {
-        userAccount: 'ydg',
-        userPassword: 'ydg.icu'
+        userAccount: 'user',
+        userPassword: '123456'
       },
       loading: false,
       passwordType: 'password',
