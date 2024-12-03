@@ -75,8 +75,8 @@ export default {
     }
     return {
       loginForm: {
-        userAccount: 'user',
-        userPassword: '123456'
+        userAccount: '',
+        userPassword: ''
       },
       loading: false,
       passwordType: 'password',
